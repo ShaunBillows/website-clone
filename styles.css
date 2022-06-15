@@ -1,0 +1,243 @@
+
+/* everything  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 0.5px 0 0 #000, 0 -0.5px 0 #000, 0 0.5px 0 #000, -0.5px 0 0 #000;
+    list-style: none;
+}
+
+body {
+    font-family: "D-DIN-Bold", Arial, Verdana, sans-serif;
+}
+
+/* navbar animation */
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    transform: scaleX(0);
+    height: 0.7px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* navigation */
+
+header {
+    font-size: 0.85rem;
+}
+
+nav {
+    position: fixed;
+}
+
+a:link { text-decoration: none;}
+
+/* a:link { text-decoration: underline;} */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+ 
+    text-align: center;
+
+    width: 100vw;
+    /* border: 1px solid black;  */
+}
+
+.nav-item {
+    padding: 2.3rem 1.9rem 0.5rem 0rem;
+    /* border: 1px solid black; */
+}
+
+img {
+    width: 320px;
+    /* border: 1px solid black; */
+    padding: 0rem 0rem 0rem 5rem;
+}
+
+.nav-item-1 {
+    min-width: 15%;
+    padding-left: 4rem;
+    /* border: 1px solid black; */
+}
+.nav-item-2 {
+    /* border: 1px solid black; */
+}
+.nav-item-3 {
+    /* border: 1px solid black; */
+}
+.nav-item-4 {
+    /* border: 1px solid black; */
+}
+.nav-item-5 {
+    /* border: 1px solid black;  */
+}
+.nav-item-6 {
+    /* border: 1px solid black;  */
+}
+.nav-item-7 {
+    /* border: 1px solid black;  */
+}
+.nav-item-8 {
+    /* border: 1px solid black; */
+}
+.nav-item-9 {
+    position: absolute;
+    left: 91%;
+
+    /* border: 1px solid black; */
+}
+.nav-item-10 {
+    position: absolute;
+    left: 95%;
+
+    /* border: 1px solid black; */
+}
+
+.menu-icon {
+    min-width: 16px;
+    height: 1.7px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* background */
+
+.background-image {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.background-image-1 {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/nilesat-301/post-launch/Homepage_Desktop.webp");
+}
+
+.background-image-2 {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/transporter-5/post-launch/Homepage_Desktop.webp");
+}
+
+.background-image-3 {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/crew-3-return/pre-undocking/Homepage_Desktop.webp");
+}
+
+.background-image-4 {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/sl4-18/post-launch/Homepage_Desktop.webp");
+}
+
+.background-image-5 {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/starship-update/S20_Chopstick_Stack_Desktop.webp");
+}
+
+.background-image-6 {
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2021/hls-resized-2.webp");
+}
+   
+/* content */
+
+.mission-info {
+    /* border: 1px solid black; */
+    position: relative;
+    top: 65vh;
+    left: 8vh;
+    font-size: 36px;
+}
+
+h4 {
+    font-size:20px;
+    /* border: 1px solid black; */
+
+    height: 3vh;
+}
+
+h2 {
+    font-size: 48px;
+    /* width: 35%; */
+    /* border: 1px solid black; */
+
+    height: 10vh;
+}
+
+.mission-info-inline {
+    width: 35%;
+    margin: 0rem 0rem 3rem 0rem;
+}
+.more-inline {
+    width: 35%;
+    margin: 0rem 0rem 7rem 0rem;
+}
+
+button {
+    width: 20vh;
+    height: 6.6vh;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: background-color 300ms ease-in-out;
+    text-shadow: none;
+}
+
+button:hover {
+    background-color: white;
+    color: black
+}
+
+.move-up {
+    top: 59vh
+}
+
+.move-up-more {
+    top: 53vh;
+}
+
+/* footer */
+
+footer {
+    /* height: 12vh; */
+    font-size: 0.7rem;
+    background-color: #000;
+    text-decoration: none;
+    
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
+
+    /* border: 1px solid white; */
+}
+
+.social-media-item {
+    min-height: 100%;
+    padding: 2.2rem 1.5rem 2.2rem 1.5rem;
+    /* border: 1px solid white; */
+}
+
+.thin-text {
+    /* font-size: larger; */
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
