@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'D-DIN DIN-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('D-DIN DIN-Bold'), url('D-DIN-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'D-DIN Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('D-DIN Regular'), url('D-DIN.woff') format('woff');
+}
 
 /* everything  */
 * {
@@ -7,10 +19,11 @@
     color: white;
     text-shadow: 0.5px 0 0 #000, 0 -0.5px 0 #000, 0 0.5px 0 #000, -0.5px 0 0 #000;
     list-style: none;
+    font-family: "D-DIN-Bold", "Arial", "Verdana", "sans-serif";
 }
 
 body {
-    font-family: "D-DIN-Bold", Arial, Verdana, sans-serif;
+    /* font-family: "D-DIN-Bold", "Arial", "Verdana", "sans-serif"; */
 }
 
 /* navbar animation */
@@ -32,17 +45,18 @@ body {
     background-color: white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
+}
   
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
 /* navigation */
 
 header {
     font-size: 0.85rem;
+    /* font-family: "D-DIN-Bold", "Arial", "Verdana", "sans-serif"; */
 }
 
 nav {
@@ -78,7 +92,7 @@ img {
 }
 
 .nav-item-1 {
-    min-width: 15%;
+    /* min-width: 15%; */
     padding-left: 4rem;
     /* border: 1px solid black; */
 }
@@ -132,27 +146,27 @@ img {
 }
 
 .background-image-1 {
-    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/nilesat-301/post-launch/Homepage_Desktop.webp");
+    background-image: url("./images/Homepage-Desktop-1.png");
 }
 
 .background-image-2 {
-    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/transporter-5/post-launch/Homepage_Desktop.webp");
+    background-image: url("./images/Homepage-Desktop-2.png");
 }
 
 .background-image-3 {
-    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/crew-3-return/pre-undocking/Homepage_Desktop.webp");
+    background-image: url("./images/Homepage-Desktop-3.png");
 }
 
 .background-image-4 {
-    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/sl4-18/post-launch/Homepage_Desktop.webp");
+    background-image: url("./images/Homepage-Desktop-4.png");
 }
 
 .background-image-5 {
-    background-image: url("https://www.spacex.com/static/images/backgrounds-2022/starship-update/S20_Chopstick_Stack_Desktop.webp");
+    background-image: url("./images/Homepage-Desktop-5.png");
 }
 
 .background-image-6 {
-    background-image: url("https://www.spacex.com/static/images/backgrounds-2021/hls-resized-2.webp");
+    background-image: url("./images/Homepage-Desktop-6.png");
 }
    
 /* content */
@@ -166,17 +180,15 @@ img {
 }
 
 h4 {
-    font-size:20px;
+    font-size:18px;
     /* border: 1px solid black; */
-
     height: 3vh;
+    /* font-weight: lighter; */
 }
 
 h2 {
     font-size: 48px;
-    /* width: 35%; */
     /* border: 1px solid black; */
-
     height: 10vh;
 }
 
@@ -194,8 +206,9 @@ button {
     height: 6.6vh;
     background-color: transparent;
     border: 2px solid white;
-    transition: background-color 300ms ease-in-out;
     text-shadow: none;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
 }
 
 button:hover {
@@ -234,10 +247,8 @@ footer {
     min-height: 100%;
     padding: 2.2rem 1.5rem 2.2rem 1.5rem;
     /* border: 1px solid white; */
+    
 }
-
 .thin-text {
-    /* font-size: larger; */
-    color: #000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.95em;
 }
